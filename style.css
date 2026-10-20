@@ -1,4 +1,7 @@
-/* ===== CORVUS ===== */
+/* ===========================
+   CORVUS v0.2
+   Raven View Media Theme
+=========================== */
 
 *{
     margin:0;
@@ -6,124 +9,359 @@
     box-sizing:border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0b111b;
-    color:#eef3fb;
-    display:flex;
-    min-height:100vh;
+:root{
+
+    --bg:#0b111b;
+    --panel:#141e2b;
+    --panel2:#192536;
+    --border:#273a55;
+    --blue:#5ea9ff;
+    --text:#edf3fb;
+    --muted:#94a6bd;
+    --green:#38d39f;
+
 }
 
-/* Sidebar */
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+SIDEBAR
+=========================== */
 
 .sidebar{
+
     width:300px;
-    background:#111926;
-    border-right:1px solid #24344f;
-    padding:35px 25px;
+
+    background:#101824;
+
+    border-right:1px solid var(--border);
+
+    padding:35px;
+
+}
+
+.logo{
+
+    margin-bottom:40px;
+
 }
 
 .logo h1{
-    color:#67a8ff;
-    font-size:44px;
+
+    color:var(--blue);
+
+    font-size:42px;
+
     letter-spacing:3px;
-    margin-bottom:6px;
+
 }
 
 .logo p{
-    color:#91a8c6;
-    font-size:13px;
-    margin-bottom:40px;
+
+    color:var(--muted);
+
     letter-spacing:2px;
+
+    font-size:12px;
+
+    margin-top:8px;
+
 }
 
-nav ul{
+.sidebar ul{
+
     list-style:none;
+
 }
 
-nav li{
-    margin-bottom:14px;
+.sidebar li{
+
+    margin-bottom:10px;
+
 }
 
-nav a{
-    text-decoration:none;
-    color:#d8e4f5;
+.sidebar a{
+
     display:block;
-    padding:14px 16px;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    padding:14px 18px;
+
     border-radius:10px;
-    transition:.2s;
-    font-size:17px;
+
+    transition:.25s;
+
 }
 
-nav a:hover{
-    background:#182638;
-    color:#67a8ff;
+.sidebar a:hover{
+
+    background:#1a2738;
+
+    color:var(--blue);
+
 }
 
-/* Main */
+/* ===========================
+MAIN
+=========================== */
 
 .main{
+
     flex:1;
-    padding:45px;
+
+    padding:40px;
+
 }
 
-.main h2{
-    font-size:38px;
-    margin-bottom:10px;
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.topbar h2{
+
+    font-size:34px;
+
 }
 
 .subtitle{
-    color:#93a8c3;
-    margin-bottom:35px;
+
+    margin-top:8px;
+
+    color:var(--muted);
+
 }
 
-/* Cards */
+.clock{
+
+    text-align:right;
+
+    font-family:monospace;
+
+}
+
+#date{
+
+    color:var(--blue);
+
+    font-size:18px;
+
+}
+
+#time{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+STATUS BAR
+=========================== */
+
+.banner{
+
+    margin-top:30px;
+
+    margin-bottom:30px;
+
+    background:#102b23;
+
+    border:1px solid #205b4b;
+
+    color:#7ef5c8;
+
+    padding:16px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================
+CARDS
+=========================== */
 
 .grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
 }
 
 .card{
-    background:#162130;
-    border:1px solid #24344f;
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
     border-radius:14px;
+
     padding:25px;
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--blue);
+
+    box-shadow:0 0 18px rgba(94,169,255,.25);
+
 }
 
 .card h3{
-    color:#69abff;
-    margin-bottom:18px;
-    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.number{
+
+    font-size:52px;
+
+    color:var(--blue);
+
+    font-weight:bold;
+
 }
 
 .card p{
-    color:#d7e2f2;
-    line-height:1.6;
+
+    color:var(--muted);
+
+    margin-top:10px;
+
 }
 
-/* World Map */
+/* ===========================
+MAP
+=========================== */
 
-.world{
+.map{
+
     margin-top:35px;
-    background:#162130;
-    border:1px solid #24344f;
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
     border-radius:14px;
-    padding:70px;
-    text-align:center;
+
+    overflow:hidden;
+
 }
 
-.world span{
-    font-size:90px;
+.map-title{
+
+    background:#1b2838;
+
+    padding:16px 22px;
+
+    color:var(--blue);
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
 }
 
-.world h2{
-    margin-top:20px;
-    font-size:30px;
+.map-placeholder{
+
+    height:420px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
-.world p{
-    color:#8fa4bf;
-    margin-top:12px;
+.map-placeholder h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.map-placeholder p{
+
+    color:var(--muted);
+
+}
+
+/* ===========================
+INTEL FEED
+=========================== */
+
+.feed{
+
+    margin-top:35px;
+
+}
+
+.feed h2{
+
+    margin-bottom:18px;
+
+}
+
+.feed-item{
+
+    background:var(--panel2);
+
+    border-left:4px solid var(--blue);
+
+    border-radius:10px;
+
+    padding:18px;
+
+    margin-bottom:14px;
+
+    color:#dbe8f6;
+
+    transition:.2s;
+
+}
+
+.feed-item:hover{
+
+    background:#213247;
+
 }

@@ -10,6 +10,8 @@
 
 <body>
 
+    <!-- Sidebar -->
+
     <aside class="sidebar">
 
         <div class="logo">
@@ -18,76 +20,172 @@
         </div>
 
         <nav>
+
             <ul>
+
                 <li><a href="#">🏠 Dashboard</a></li>
+
                 <li><a href="#">🚨 Raven Alerts</a></li>
-                <li><a href="#">🌍 Global Watch</a></li>
+
+                <li><a href="#">🌍 Global Intelligence</a></li>
+
                 <li><a href="#">⚔️ Armed Conflicts</a></li>
+
                 <li><a href="#">💻 Cyber Intelligence</a></li>
-                <li><a href="#">🛰️ Satellite</a></li>
+
                 <li><a href="#">🚢 Maritime</a></li>
+
                 <li><a href="#">✈️ Aviation</a></li>
+
                 <li><a href="#">🏛️ Politics</a></li>
+
+                <li><a href="#">🌪️ Natural Disasters</a></li>
+
                 <li><a href="#">🕵️ Investigations</a></li>
+
                 <li><a href="#">⚙️ Settings</a></li>
+
             </ul>
+
         </nav>
 
     </aside>
 
+    <!-- Main -->
+
     <main class="main">
 
-        <h2>Intelligence Operations Dashboard</h2>
+        <header class="topbar">
 
-        <p class="subtitle">
-            Real-time Open Source Intelligence • Raven View Media
-        </p>
+            <div>
 
-        <div class="grid">
+                <h2>Intelligence Operations Dashboard</h2>
+
+                <p class="subtitle">
+                    Raven View Media • Open Source Intelligence Platform
+                </p>
+
+            </div>
+
+            <div class="clock">
+
+                <div id="date">
+                    20 OCT 2026
+                </div>
+
+                <div id="time">
+                    13:45 EDT
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Alert Banner -->
+
+        <section class="banner">
+
+            🟢 SYSTEM STATUS NORMAL • ALL FEEDS OPERATIONAL
+
+        </section>
+
+        <!-- Cards -->
+
+        <section class="grid">
 
             <div class="card">
+
                 <h3>🚨 Raven Alerts</h3>
-                <p>
-                    No active Code Red alerts.
-                </p>
+
+                <div class="number">3</div>
+
+                <p>Active Alerts</p>
+
             </div>
 
             <div class="card">
+
                 <h3>🌍 Global Watch</h3>
-                <p>
-                    Monitoring worldwide geopolitical developments.
-                </p>
+
+                <div class="number">18</div>
+
+                <p>Stories Being Monitored</p>
+
             </div>
 
             <div class="card">
-                <h3>⚔️ Active Conflicts</h3>
-                <p>
-                    Ukraine • Israel • Red Sea • Sudan
-                </p>
+
+                <h3>⚔️ Armed Conflicts</h3>
+
+                <div class="number">7</div>
+
+                <p>Active Conflict Zones</p>
+
             </div>
 
             <div class="card">
-                <h3>💻 Cyber Intelligence</h3>
-                <p>
-                    Awaiting latest cybersecurity advisories.
-                </p>
+
+                <h3>💻 Cyber Events</h3>
+
+                <div class="number">2</div>
+
+                <p>Critical Advisories</p>
+
             </div>
 
-        </div>
+        </section>
 
-        <section class="world">
+        <!-- Map -->
 
-            <span>🌎</span>
+        <section class="map">
 
-            <h2>Interactive Intelligence Map</h2>
+            <div class="map-title">
 
-            <p>
-                Live world map coming in the next build.
-            </p>
+                🌎 GLOBAL INTELLIGENCE MAP
+
+            </div>
+
+            <div class="map-placeholder">
+
+                <h2>Interactive Intelligence Map</h2>
+
+                <p>
+                    Coming in Corvus v0.3
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Feed -->
+
+        <section class="feed">
+
+            <h2>Latest Intelligence</h2>
+
+            <div class="feed-item">
+
+                🔴 Israel conducts overnight operations in Gaza.
+
+            </div>
+
+            <div class="feed-item">
+
+                🟠 Increased PLA activity reported near Taiwan.
+
+            </div>
+
+            <div class="feed-item">
+
+                🟢 FBI releases new cybersecurity advisory.
+
+            </div>
 
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
