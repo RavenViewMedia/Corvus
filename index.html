@@ -1,13 +1,118 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Corvus v2</title><link rel='stylesheet' href='style.css'></head><body>
-<div class='bg'></div><aside class='sidebar'><h1>CORVUS</h1><p>INTELLIGENCE CENTER</p><nav>
-<a>Dashboard</a><a>Raven Alerts</a><a>Global Watch</a><a>Conflicts</a><a>Cyber</a><a>Maritime</a><a>Aviation</a><a>Politics</a><a>Investigations</a><a>Settings</a>
-</nav></aside>
-<main><header><h2>Operations Dashboard</h2><div id='clock'></div></header>
-<section class='status'>● COLLECTION ONLINE ● SATELLITES ONLINE ● 18 SOURCES ● THREAT LEVEL: GUARDED</section>
-<div class='grid'>
-<div class='panel'><h3>🚨 Raven Alerts</h3><p>3 Active Alerts</p></div>
-<div class='panel'><h3>🌍 Global Watch</h3><p>18 Stories</p></div>
-<div class='panel wide'><h3>Global Intelligence Map</h3><div class='map'>MAP PLACEHOLDER</div></div>
-<div class='panel'><h3>⚔ Hotspots</h3><ul><li>Ukraine</li><li>Middle East</li><li>Taiwan</li></ul></div>
-<div class='panel'><h3>📡 Live Feed</h3><ul><li>1948 - Intel update</li><li>1945 - Cyber advisory</li></ul></div>
-</div></main><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corvus | Intelligence Operations Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hud-grid"></div>
+
+<aside class="sidebar">
+  <div class="brand">
+    <h1>CORVUS</h1>
+    <p>INTELLIGENCE OPERATIONS CENTER</p>
+  </div>
+
+  <nav>
+    <a class="active" href="#">Dashboard</a>
+    <a href="#">Raven Alerts</a>
+    <a href="#">Global Watch</a>
+    <a href="#">Intelligence Feed</a>
+    <a href="#">Conflicts</a>
+    <a href="#">Cyber</a>
+    <a href="#">Maritime</a>
+    <a href="#">Aviation</a>
+    <a href="#">Investigations</a>
+    <a href="#">Settings</a>
+  </nav>
+
+  <div class="system">
+    <h4>SYSTEM</h4>
+    <div>● ONLINE</div>
+    <div>Feeds: <span id="feedCount">147</span></div>
+    <div>Threat: <span class="guarded">GUARDED</span></div>
+  </div>
+</aside>
+
+<main class="main">
+
+<header class="topbar">
+<div>
+<h2>Global Operating Picture</h2>
+<p>Raven View Media OSINT Platform</p>
+</div>
+
+<div class="clock">
+<div id="date">-- --- ----</div>
+<div id="time">0000 EDT</div>
+</div>
+</header>
+
+<section class="status-ribbon">
+<span>● COLLECTION ONLINE</span>
+<span>● SATELLITE READY</span>
+<span>● CYBER MONITORING</span>
+<span>● WEATHER FEEDS</span>
+<span>● SECURE SESSION</span>
+</section>
+
+<section class="hero-layout">
+
+<section class="map-panel">
+<div class="panel-title">GLOBAL OPERATING PICTURE</div>
+<div class="map-placeholder">
+<h1>WORLD MAP</h1>
+<p>Leaflet + live intelligence overlays will live here.</p>
+</div>
+</section>
+
+<aside class="right-column">
+
+<div class="widget">
+<h3>RAVEN ALERTS</h3>
+<ul>
+<li>🔴 Yemen / Red Sea</li>
+<li>🟠 Taiwan Strait</li>
+<li>🟢 FBI Cyber</li>
+</ul>
+</div>
+
+<div class="widget">
+<h3>LIVE FEED</h3>
+<ul>
+<li>1348 • Ukraine</li>
+<li>1345 • Israel</li>
+<li>1342 • CISA</li>
+<li>1338 • Taiwan</li>
+</ul>
+</div>
+
+<div class="widget">
+<h3>HOTSPOTS</h3>
+<ul>
+<li>Ukraine</li>
+<li>Middle East</li>
+<li>Taiwan</li>
+<li>Arctic</li>
+</ul>
+</div>
+
+</aside>
+
+</section>
+
+<footer class="footer-bar">
+CORVUS v1.0 FOUNDATION
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
