@@ -1,18 +1,1 @@
-
-body{margin:0;background:#06090f;color:#eaf2fb;font-family:Inter,sans-serif;display:flex}
-.bggrid{position:fixed;inset:0;background:
-linear-gradient(rgba(95,174,255,.05) 1px,transparent 1px),
-linear-gradient(90deg,rgba(95,174,255,.05) 1px,transparent 1px);
-background-size:40px 40px;pointer-events:none}
-.sidebar{width:270px;background:#0d141d;border-right:1px solid #24364f;padding:24px;z-index:1}
-.brand{font-size:30px;font-weight:700;color:#5faeff}.brand span{display:block;font-size:11px;color:#8fa5be;letter-spacing:2px}
-nav{margin-top:30px;display:flex;flex-direction:column;gap:8px}
-nav a{padding:12px;border-left:3px solid transparent;color:#d9e8f8}
-nav a.active,nav a:hover{background:#151f2b;border-left-color:#5faeff}
-main{flex:1;padding:30px;z-index:1}
-header{display:flex;justify-content:space-between}
-#clock{font-family:monospace;color:#74c0ff;font-size:22px;text-align:right}
-.hero{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:20px}
-.map,.alerts,.feed{background:#0d141d;border:1px solid #24364f;border-radius:6px;padding:20px}
-.map{min-height:420px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(circle at center,#13263d,#0d141d)}
-.feed{margin-top:20px}
+body{margin:0;background:#050b14;color:#eef;font-family:Arial;display:flex}.bg{position:fixed;inset:0;background:radial-gradient(circle at top,#17365f33,transparent 60%),linear-gradient(#08111d,#05070c);z-index:-1}.sidebar{width:280px;background:#0d1624;border-right:1px solid #294a72;padding:30px}h1{color:#6aa9ff;letter-spacing:4px}nav a{display:block;padding:14px;color:#d7e7ff;text-decoration:none;border-radius:8px}nav a:hover{background:#18304d}main{flex:1;padding:40px}header{display:flex;justify-content:space-between}.status{margin:20px 0;color:#7ee081}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:linear-gradient(#172434,#111a26);border:1px solid #335985;border-radius:16px;padding:24px;box-shadow:0 0 25px #3b7cff22}.wide{grid-column:1/3}.map{height:320px;border:1px dashed #4e79aa;display:flex;align-items:center;justify-content:center;font-size:40px;color:#5f89b5}
